@@ -70,7 +70,7 @@ namespace CrossinformTest
             FileName = Console.ReadLine();
             while (!(File.Exists(FileName)))
             {
-                Console.WriteLine("Файл {0} не найден! Введите путь к файлу:", FileName);
+                Console.WriteLine($"Файл {FileName} не найден! Введите путь к файлу:");
                 FileName = Console.ReadLine();
             }
 
@@ -104,7 +104,7 @@ namespace CrossinformTest
             Console.WriteLine("");
             Console.WriteLine("Самые часто встречающиеся триплеты в тексте:");
             Console.WriteLine(printstr);
-            Console.WriteLine("Время выполнения программы: {0} мс", stopwatch.Elapsed.TotalMilliseconds);
+            Console.WriteLine($"Время выполнения программы: {stopwatch.Elapsed.TotalMilliseconds} мс");
             Console.ReadLine();
         }
     }
